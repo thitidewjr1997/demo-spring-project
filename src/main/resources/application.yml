@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  messages:
+    basename: ValidationMessages,LabelMessages
+  application:
+    name: demo-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/DemoDB?readPreference=primary&appname=MongoDB%20Compass&ssl=false
+      auto-index-creation: true
+    web:
+      pageable:
+        one-indexed-parameters: true
